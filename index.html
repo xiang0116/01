@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>QuickPrice 比價網</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 id="title">QuickPrice 比價網</h1>
+      <div id="lang-toggle">
+        <button onclick="setLang('zh')">繁體中文</button>
+        <button onclick="setLang('en')">English</button>
+      </div>
+    </header>
+    <div class="search-box">
+      <input type="text" id="search" placeholder="請輸入商品名稱">
+      <button onclick="search()"><span id="searchBtnText">搜尋</span></button>
+    </div>
+    <div id="results"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
